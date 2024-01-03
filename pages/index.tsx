@@ -61,7 +61,7 @@ const Home: NextPage = () => {
       <SimpleGrid columns={2} spacing={10}>
         <Card p={5}>
           <Heading>Villa</Heading>
-          <Image src="/COIN.png" alt="Descripción de la imagen" boxSize="40px" />
+          <Image src="/COIN.PNG" alt="Descripción de la imagen" boxSize="40px" />
           <SimpleGrid columns={2} spacing={10}>
             <Box>
               {ownedFarmers?.map((nft) => (
