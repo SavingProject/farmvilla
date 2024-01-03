@@ -13,7 +13,7 @@ export default function NavBar() {
                 <Flex alignItems={"center"}>
                     <Link href={"/"} mx={4} fontSize="25px">Play</Link>
                     <Link href={"/shop"} mx={4} fontSize="25px">Shop</Link>
-                    <Link href={"https://stakecvs.vercel.app/"} mx={4} fontSize="25px">Stake CVS</Link>
+                    <Link href={" "} mx={4} fontSize="25px">Stake CVS soon</Link>
                        
                 </Flex>
                 <ConnectWallet/>
