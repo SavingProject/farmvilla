@@ -25,7 +25,7 @@ export default function Shop()  {
                     <Spinner />
                 </Flex>
             ) : (
-                <SimpleGrid columns={3} spacing={10}>
+                <SimpleGrid columns={5} spacing={15}>
                     {nfts?.map((nftItem) => (
                         <NFT 
                             key={nftItem.metadata.id}
