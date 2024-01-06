@@ -11,9 +11,10 @@ export default function NavBar() {
                 <Image src="/svit.png" alt="Descripción de la imagen" boxSize="40px" />
                 </HStack>
                 <Flex alignItems={"center"}>
-                    <Link href={"/"} mx={4} fontSize="25px">Play</Link>
-                    <Link href={"/shop"} mx={4} fontSize="25px">Shop</Link>
-                    <Link href={" "} mx={4} fontSize="25px">Stake CVS soon</Link>
+                    <Link href={"/"} mx={4} fontSize="20px">Play</Link>
+                    <Link href={"/shop"} mx={4} fontSize="20px">Shop</Link>
+                    <Link href={"https://stakecvs.vercel.app/"} mx={4} fontSize="20px" target="_blank">Stake CVS</Link>
+                    <Link href={"https://www.savingtoken.net/game/farm-villa"} mx={4} fontSize="20px" target="_blank">Main page</Link>
                        
                 </Flex>
                 <ConnectWallet/>
