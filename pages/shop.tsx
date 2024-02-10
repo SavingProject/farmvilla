@@ -10,30 +10,30 @@ export default function Shop()  {
     console.log(nfts);
 
     return (
-        <Container maxW={"1200px"}>
-            <Flex direction={"row"} justifyContent={"space-between"} alignItems={"center"}>
-                <Link
-                    href="/"
-                >
-                    <Button>Back</Button>
-                </Link>
-            </Flex>
-            <Heading mt={"40px"}>Shop</Heading>
-            <Text>Purchase to increase your earnings.</Text>
-            {!nfts ? (
-                <Flex h={"50vh"} justifyContent={"center"} alignItems={"center"}>
-                    <Spinner />
+        <div style={{ backgroundImage: `url('/fondofarm.jpg')`, backgroundSize: 'cover', minHeight: '100vh' }}>
+            <Container maxW={"1200px"}>
+                <Flex direction={"row"} justifyContent={"space-between"} alignItems={"center"}>
+                    <Link href="/">
+                        <Button>Back</Button>
+                    </Link>
                 </Flex>
-            ) : (
-                <SimpleGrid columns={5} spacing={15}>
-                    {nfts?.map((nftItem) => (
-                        <NFT 
-                            key={nftItem.metadata.id}
-                            nft={nftItem}
-                        />
-                    ))}
-                </SimpleGrid>
-            )}
-        </Container>
+                <Heading mt={"40px"} fontWeight="bold" color="white">Shop</Heading>
+                <Text fontWeight="bold" color="white">Purchase to increase your earnings.</Text>
+                {!nfts ? (
+                    <Flex h={"50vh"} justifyContent={"center"} alignItems={"center"}>
+                        <Spinner />
+                    </Flex>
+                ) : (
+                    <SimpleGrid columns={5} spacing={15}>
+                        {nfts?.map((nftItem) => (
+                            <NFT 
+                                key={nftItem.metadata.id}
+                                nft={nftItem}
+                            />
+                        ))}
+                    </SimpleGrid>
+                )}
+            </Container>
+        </div>
     )
 };
