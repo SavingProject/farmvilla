@@ -14,6 +14,7 @@ export default function NavBar() {
                     <Link href={"/"} mx={4} fontSize="20px">Play</Link>
                     <Link href={"/shop"} mx={4} fontSize="20px">Shop</Link>
                     <Link href={"https://www.eggs.cool/ex/#/swap"} mx={4} fontSize="20px" target="_blank">Change CVS to SVIT</Link>
+                    <Link href={"https://stakecvs.vercel.app"} mx={4} fontSize="20px" target="_blank">Stake CVS</Link>
                     <Link href={"https://www.savingtoken.net/game/farm-villa"} mx={4} fontSize="20px" target="_blank">Main page</Link>
                        
                 </Flex>
